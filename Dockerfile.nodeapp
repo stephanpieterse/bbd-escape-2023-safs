@@ -1,0 +1,11 @@
+FROM node:20-alpine
+
+COPY ./app/package.json /opt/dist/
+
+WORKDIR /opt/dist
+
+RUN npm install --omit=dev
+
+COPY ./app /opt/dist
+
+CMD ["npm", "run", "start"]

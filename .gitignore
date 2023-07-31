@@ -1,0 +1,7 @@
+node_modules
+secureapp.db
+_slides
+audio
+certs
+db_testdata.sql
+app/secureapp.db

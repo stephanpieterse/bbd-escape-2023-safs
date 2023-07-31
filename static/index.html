@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<title>Secure App from Scratch</title>
+	<link rel="stylesheet" href="assets/pure-min.css">
+	</link>
+	<style>
+		body {
+			background-color: #f2eff8;
+		}
+
+		.main_logo {
+			width: 312px;
+			margin: 32px;
+		}
+
+		.section_instructions {
+			padding: 5px;
+			margin: 5px;
+		}
+
+		.section_userinput label {
+			display: block;
+			margin: 5px;
+		}
+
+		.section_output div {
+			margin: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main_body">
+		<img class="main_logo" src="assets/logo.png" alt="main logo">
+		<div class="pure-g">
+			<div class="section_instructions pure-u-1-4">
+				Please enter your name and password, as well as a number and we will give you some info about
+				them!<br />
+				Usernames are assigned a first come first served basis.<br />
+				Use anon/anon if you just want some facts.
+			</div>
+			<div class="section_userinput pure-u-1-4">
+				<label for="input_name">Name: <input id="input_name" type="text" /></label>
+				<label for="input_password">Password: <input id="input_password" type="password" /></label>
+				<label for="input_number">Number: <input id="input_number" type="text" /></label>
+				<button id="button_submit">Submit</button>
+			</div>
+			<div class="section_output pure-u-1-4">
+				<div id="section_output_stats"></div>
+				<div id="section_output_lastqueries"></div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/jquery-3.7.0.min.js"></script>
+	<script src="assets/app.js"></script>
+</body>
+
+</html>

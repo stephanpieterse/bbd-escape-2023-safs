@@ -1,0 +1,5 @@
+FROM nginx:1.25.1
+
+COPY ./static /usr/share/nginx/html
+COPY nginx-safssite.conf /etc/nginx/conf.d/bbdescape.conf
+COPY ./certs /etc/letsencrypt/live/bbdescape2023.apollolms.co.za/
